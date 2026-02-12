@@ -14,6 +14,15 @@ print("First 5 students:\n", marks[:5])
 
 # Basic Statistics (Core NumPy)
 
+mean_scores = np.mean(marks, axis=0)
+print("Mean Scores:", mean_scores)
+
+median_scores = np.median(marks, axis=0)
+print("Median Scores:", median_scores)
+
+std_scores = np.std(marks, axis=0)
+print("Standard Deviation:", std_scores)
+
 subjects_names = ["Math", "Physics", "CS"]
 
 print("\n===== Average Scores =====")
