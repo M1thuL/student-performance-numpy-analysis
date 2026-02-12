@@ -28,3 +28,6 @@ subjects_names = ["Math", "Physics", "CS"]
 print("\n===== Average Scores =====")
 for i in range(len(subjects_names)):
     print(f"{subjects_names[i]}: {mean_scores[i]:.2f}")
+
+total_scores = np.sum(marks, axis=1)
+print("First 5 total scores:", total_scores[:5])
