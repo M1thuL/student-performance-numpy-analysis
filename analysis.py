@@ -10,3 +10,12 @@ subjects_name = ["Physics", "Math", "Chemistry"]
 # print(marks[:,1]) ->  all math marks 
 # print(marks[:,2]) ->  all chemistry marks 
 
+print("First 5 students:\n", marks[:5])
+
+# Basic Statistics (Core NumPy)
+
+subjects_names = ["Math", "Physics", "CS"]
+
+print("\n===== Average Scores =====")
+for i in range(len(subjects_names)):
+    print(f"{subjects_names[i]}: {mean_scores[i]:.2f}")
