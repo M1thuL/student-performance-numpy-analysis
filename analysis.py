@@ -31,3 +31,16 @@ for i in range(len(subjects_names)):
 
 total_scores = np.sum(marks, axis=1)
 print("First 5 total scores:", total_scores[:5])
+
+top_student_index = np.argmax(total_scores)
+top_student_score = total_scores[top_student_index]
+
+top_5_indices = np.argsort(total_scores)[-5:][::-1]
+
+print("\n===== Top Student =====")
+print(f"Student ID: {top_student_index}")
+print(f"Total Score: {top_student_score}")
+
+print("\n===== Top 5 Students =====")
+for idx in top_5_indices:
+    print(f"Student {idx} - Total: {total_scores[idx]}")
